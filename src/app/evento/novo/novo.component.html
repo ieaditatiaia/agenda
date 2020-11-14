@@ -1,0 +1,29 @@
+<div class="container ui-fluid">
+  <form (ngSubmit)="salvar()">
+    <div class="ui-g">
+        <div class="ui-g-12">
+            <h2>Novo Evento</h2>
+        </div>
+
+        <div class="ui-g-12 ui-md-5">
+          <label for="title">Título</label>
+          <input type="text" pInputText name="title" id="title" [(ngModel)]="event.title" autofocus required>
+        </div>
+
+        <div class="ui-g-12 ui-md-4">
+          <label for="start">Data</label>
+          <input type="datetime-local" pInputText name="start" id="start" [(ngModel)]="event.start" required>
+        </div>
+
+        <div class="ui-g-12 ui-md-3">
+          <label for="local">Local</label>
+          <input type="text" pInputText name="local" id="local" [(ngModel)]="event.locale" required>
+        </div>
+
+        <div class="ui-g-12 ui-md-2">
+          <label></label>
+          <button type="submit" pButton icon="pi pi-check" class="ui-button-success" label="Salvar"></button>
+        </div>
+    </div>
+  </form>
+</div>
