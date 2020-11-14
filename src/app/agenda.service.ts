@@ -9,8 +9,8 @@ import { Event } from './event.model';
 })
 export class AgendaService {
 
-private baseUrl = 'http://localhost:8080/api/v1/events';
-//private baseUrl = 'https://ieadi-agenda.herokuapp.com/api/v1/events';
+//private baseUrl = 'http://localhost:8080/api/v1/events';
+private baseUrl = 'https://ieadi-agenda.herokuapp.com/api/v1/events';
 
   constructor(private http: HttpClient) { }
 
